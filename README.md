@@ -298,7 +298,7 @@ Download the dependent software libraries to the  **sample-videoanalysiscar/scri
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0182554635_p13333042818"><a name="en-us_topic_0182554635_p13333042818"></a><a name="en-us_topic_0182554635_p13333042818"></a>The current application uses FFmpeg to decapsulate video files.</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554635_p1233354214115"><a name="en-us_topic_0182554635_p1233354214115"></a><a name="en-us_topic_0182554635_p1233354214115"></a>The URL for downloading the FFmpeg 4.0 code is <a href="https://github.com/FFmpeg/FFmpeg/tree/release/4.0" target="_blank" rel="noopener noreferrer">https://github.com/FFmpeg/FFmpeg/tree/release/4.0</a>.</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554635_p1233354214115"><a name="en-us_topic_0182554635_p1233354214115"></a><a name="en-us_topic_0182554635_p1233354214115"></a>The URL for downloading the FFmpeg 4.0 code is <a href="https://gitee.com/mirrors/ffmpeg/tree/release%2F4.0/" target="_blank" rel="noopener noreferrer">https://gitee.com/mirrors/ffmpeg/tree/release%2F4.0/</a>.</p>
 <p id="en-us_topic_0182554635_p20333134213110"><a name="en-us_topic_0182554635_p20333134213110"></a><a name="en-us_topic_0182554635_p20333134213110"></a>After the download, keep the folder name <span class="filepath" id="en-us_topic_0182554635_filepath03332042716"><a name="en-us_topic_0182554635_filepath03332042716"></a><a name="en-us_topic_0182554635_filepath03332042716"></a><b>ffmpeg.</b></span></p>
 </td>
 </tr>
