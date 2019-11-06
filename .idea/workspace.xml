@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cafcb2e3-a438-40ff-bdcd-e985941cb21f" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/../out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sample_videoanalysiscar" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>CreateGraph</find>
+      <find>.so</find>
+      <find>so</find>
+      <find>CarInference</find>
+      <find>ERROR</find>
+      <find>NPU_DEV_LIB</find>
+      <find>script_path</find>
+      <find>facial_recognition</find>
+      <find>presenter_atlasdk_ip</find>
+      <find>sed</find>
+      <find>video_analysis</find>
+      <find>cv</find>
+      <find>presenter_server_storage_path</find>
+      <find>tools_path</find>
+      <find>DDK_BIN</find>
+      <find>app_path</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ffmpeg/libavcodec/avcodec.h" />
+        <option value="$PROJECT_DIR$/src/ffmpeg/libavutil/common.h" />
+        <option value="$PROJECT_DIR$/src/ffmpeg/libavutil/pixfmt.h" />
+        <option value="$PROJECT_DIR$/src/ffmpeg/libavcodec/version.h" />
+        <option value="$PROJECT_DIR$/src/ffmpeg/libavformat/avio.h" />
+        <option value="$PROJECT_DIR$/src/ffmpeg/libavformat/version.h" />
+        <option value="$PROJECT_DIR$/src/ffmpeg/libavformat/avformat.h" />
+        <option value="$PROJECT_DIR$/src/VideoAnalysisPost/video_analysis_post.cpp" />
+        <option value="$PROJECT_DIR$/src/VideoDecode/video_decode.cpp" />
+        <option value="$PROJECT_DIR$/src/ObjectDetection/object_detection.cpp" />
+        <option value="$PROJECT_DIR$/src/CartypeInference/car_type_inference.cpp" />
+        <option value="$PROJECT_DIR$/src/CarColorInference/car_color_inference.cpp" />
+        <option value="$PROJECT_DIR$/src/CarPlateDetection/car_plate_detection.cpp" />
+        <option value="$PROJECT_DIR$/build/cmake/CMakeFiles/Makefile2" />
+        <option value="$PROJECT_DIR$/build/intermediates/device/cmake_install.cmake" />
+        <option value="$PROJECT_DIR$/src/VideoDecode/video_decode.h" />
+        <option value="$PROJECT_DIR$/src/VideoAnalysisPost/video_analysis_message.pb.cpp" />
+        <option value="$PROJECT_DIR$/src/Main.h" />
+        <option value="$PROJECT_DIR$/src/Main.cpp" />
+        <option value="$PROJECT_DIR$/src/graph.config" />
+        <option value="$PROJECT_DIR$/src/prepare_present_server.sh" />
+        <option value="$PROJECT_DIR$/src/prepare_graph.sh" />
+        <option value="$PROJECT_DIR$/presenterserver/video_analysis/config/config.conf" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/run_present_server.sh" />
+        <option value="$PROJECT_DIR$/script/func_util.sh" />
+        <option value="$PROJECT_DIR$/src/param_configure.conf" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/script/deploy.sh" />
+        <option value="$PROJECT_DIR$/script/build_ffmpeg.sh" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="951" />
+    <option name="y" value="24" />
+    <option name="width" value="969" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="sample_videoanalysiscar" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sample_videoanalysiscar" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="sample_videoanalysiscar" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sample_videoanalysiscar" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="sample_videoanalysiscar" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sample_videoanalysiscar" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="script" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sample_videoanalysiscar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample_videoanalysiscar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sample_videoanalysiscar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample_videoanalysiscar" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sample_videoanalysiscar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample_videoanalysiscar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sample_videoanalysiscar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample_videoanalysiscar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="VideoDecode" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="deletionFromPopupRequiresConfirmation" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="sample_videoanalysiscar" type="AscendAppConfigurationType" factoryName="Ascend App" hostip="192.168.1.2" ProfilingParams="{&quot;--ctrl_cpu_profiling&quot;:&quot;on&quot;,&quot;--llc_capacity&quot;:&quot;on&quot;,&quot;--RTS_Profiling&quot;:&quot;on&quot;,&quot;ProfilingStatus&quot;:&quot;off&quot;,&quot;peripheral_dvpp&quot;:&quot;on&quot;,&quot;--ai_core_profiling&quot;:&quot;on&quot;,&quot;--ddr_interval&quot;:&quot;100&quot;,&quot;--ai_core_profiling_interval&quot;:&quot;10&quot;,&quot;--HIAI_Engine_Profiling&quot;:&quot;on&quot;,&quot;--cpu_profiling_interval&quot;:&quot;20&quot;,&quot;--ai_core_profiling_mode&quot;:&quot;task-based&quot;,&quot;--ddr_profiling&quot;:&quot;on&quot;,&quot;peripheral_nic&quot;:&quot;on&quot;,&quot;--ai_cpu_profiling&quot;:&quot;on&quot;,&quot;--llc_bandwidth&quot;:&quot;off&quot;,&quot;--OME_Profiling&quot;:&quot;on&quot;,&quot;--peripheral_profiling&quot;:&quot;nic,dvpp&quot;,&quot;--ddr_master_id&quot;:&quot;0&quot;,&quot;--ts_cpu_profiling&quot;:&quot;on&quot;,&quot;--peripheral_profiling_interval&quot;:&quot;10&quot;,&quot;--llc_interval&quot;:&quot;100&quot;}">
+      <method v="2">
+        <option name="ToolBeforeAscendAppRunTask" enabled="false" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cafcb2e3-a438-40ff-bdcd-e985941cb21f" name="Default Changelist" comment="" />
+      <created>1570524402710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570524402710</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49816176" visible="true" weight="0.17367558" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5018382" side_tool="true" weight="0.23018043" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4562118" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32892057" />
+      <window_info anchor="bottom" id="Log" order="7" weight="0.5785536" />
+      <window_info anchor="bottom" id="Output" order="8" weight="0.19653767" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34521386" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.39205703" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ffmpeg/libavformat/avformat.h" />
+    <entry file="file://$PROJECT_DIR$/src/ffmpeg/libavformat/version.h" />
+    <entry file="file://$PROJECT_DIR$/src/ffmpeg/libavformat/avio.h" />
+    <entry file="file://$PROJECT_DIR$/build/cmake/Makefile" />
+    <entry file="file://$PROJECT_DIR$/src/VideoAnalysisPost/video_analysis_post.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CartypeInference/car_type_inference.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarPlateRecognition/car_plate_recognition.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarPlateDetection/car_plate_detection.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarColorInference/car_color_inference.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/out/graph.config.host" />
+    <entry file="file://$PROJECT_DIR$/src/VideoAnalysisPost/video_analysis_message.pb.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/VideoAnalysisPost/video_analysis_message.pb.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="2516" column="91" selection-start-line="2516" selection-start-column="79" selection-end-line="2516" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VideoAnalysisPost/video_analysis_message.pb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="103" column="24" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph.config.bak" />
+    <entry file="file://$PROJECT_DIR$/src/graph.config" />
+    <entry file="file://$PROJECT_DIR$/src/CartypeInference/car_type_inference.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarColorInference/car_color_inference.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="168" column="37" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarPlateDetection/car_plate_detection.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6480">
+          <caret line="432" column="35" selection-start-line="432" selection-start-column="33" selection-end-line="432" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_sample_videoanalysiscar.iml" />
+    <entry file="file://$PROJECT_DIR$/src/CarPlateRecognition/car_plate_recognition.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prepare_present_server.sh" />
+    <entry file="file://$PROJECT_DIR$/src/prepare_graph.sh" />
+    <entry file="file://$PROJECT_DIR$/src/ObjectDetection/object_detection.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6240">
+          <caret line="416" column="27" selection-start-line="416" selection-start-column="25" selection-end-line="416" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenterserver/presenter_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenterserver/video_analysis/src/video_analysis_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12930">
+          <caret line="875" selection-start-line="875" selection-end-line="875" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenterserver/video_analysis/src/config_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4800">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph_template.config" />
+    <entry file="file://$PROJECT_DIR$/presenterserver/video_analysis/config/logging.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ObjectDetectionPost/object_detection_post.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="182" column="35" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VideoAnalysisPost/video_analysis_post.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="184" column="45" selection-start-line="184" selection-start-column="45" selection-end-line="184" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/func_util.sh" />
+    <entry file="file://$PROJECT_DIR$/presenterserver/video_analysis/config/config.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/out/graph.config" />
+    <entry file="file://$PROJECT_DIR$/run_present_server.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/func_util.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3002">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/func_deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="57" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/INFO.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample_videoanalysiscar.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VideoDecode/video_decode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VideoDecode/video_decode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="97" selection-start-line="4" selection-start-column="97" selection-end-line="4" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/param_configure.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/build_ezdvpp.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/build_ffmpeg.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>sample_videoanalysiscar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
