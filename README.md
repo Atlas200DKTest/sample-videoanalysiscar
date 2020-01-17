@@ -17,7 +17,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  Obtain the source code package.
 
-    Download all the code in the sample-videoanalysiscar repository at  [https://gitee.com/Atlas200DK/sample-videoanalysiscar](https://gitee.com/Atlas200DK/sample-videoanalysiscar)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  _/home/ascend/sample-videoanalysiscar_.
+    Download all the code in the sample-videoanalysiscar repository at  [https://gitee.com/Atlas200DK/sample-videoanalysiscar](https://gitee.com/Atlas200DK/sample-videoanalysiscar)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  $HOME/sample-videoanalysiscar.
 
 2.  <a name="en-us_topic_0182554635_li8221184418455"></a>Obtain the source network model required by the application.
 
@@ -108,12 +108,11 @@ Before running the application, obtain the source code package and configure the
 
     Run the following commands to add the environment variables  **DDK\_HOME**  and  **LD\_LIBRARY\_PATH**  to the last line:
 
-    **export DDK\_HOME=/home/XXX/tools/che/ddk/ddk**
+    **export DDK\_HOME=$HOME/tools/che/ddk/ddk**
 
     **export LD\_LIBRARY\_PATH=$DDK\_HOME/uihost/lib**
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   **XXX**  indicates the  Mind Studio  installation user, and  **/home/XXX/tools**  indicates the default installation path of the DDK.  
     >-   If the environment variables have been added, skip this step.  
 
     Enter  **:wq!**  to save and exit.
@@ -125,7 +124,7 @@ Before running the application, obtain the source code package and configure the
 
 ## Deployment<a name="en-us_topic_0182554635_section1759513564117"></a>
 
-1.  Access the root directory where the vehicle detection application code is located as the  Mind Studio  installation user, for example,  _**/home/ascend/sample-videoanalysiscar**_.
+1.  Access the root directory where the vehicle detection application code is located as the  Mind Studio  installation user, for example,  **$HOME/sample-videoanalysiscar**.
 2.  <a name="en-us_topic_0182554635_li08019112542"></a>Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library and configuring Presenter Server. The Presenter Server is used to receive the data sent by the application and display the result through the browser.
 
     **bash deploy.sh** _host\_ip_ _model\_mode_
@@ -194,7 +193,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  Run the video analysis application.
 
-    Run the following command in the  **/home/ascend/sample-videoanalysiscar**  directory to start the video analysis application:
+    Run the following command in the  **$HOME/sample-videoanalysiscar**  directory to start the video analysis application:
 
     **bash run\_videoanalysiscarapp.sh** _host\_ip_ _presenter\_view\_appname_ _channel1_ _[channel2]_  &
 
