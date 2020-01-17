@@ -125,7 +125,7 @@
 
 ## 部署<a name="zh-cn_topic_0182554635_section1759513564117"></a>
 
-1.  以Mind Studio安装用户进入车辆检测应用代码所在根目录，如**$HOME/sample-videoanalysiscar**。
+1.  以Mind Studio安装用户进入车辆检测应用代码所在根目录，如：**$HOME/sample-videoanalysiscar**。
 2.  <a name="zh-cn_topic_0182554635_li08019112542"></a>执行部署脚本，进行工程环境准备，包括ascenddk公共库的编译与部署、Presenter Server服务器的配置等操作，其中Presenter Server用于接收Application发送过来的数据并通过浏览器进行结果展示。
 
     **bash deploy.sh** _host\_ip_ _model\_mode_
