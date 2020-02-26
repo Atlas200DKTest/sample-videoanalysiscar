@@ -37,7 +37,14 @@ check_param_configure()
 
 function build_common()
 {
-	echo "build commn lib..."
+    echo "build commn lib..."
+    if [ ! -d "${HOME}/ascend_ddk" ];then
+        mkdir $HOME/ascend_ddk
+        if [[ $? -ne 0 ]];then
+            echo "ERROR: Execute mkdir command failed, Please check your environment"
+            return 1
+        fi
+    fi
     bash ${script_path}/build_ezdvpp.sh ${remote_host}
     if [ $? -ne 0 ];then
         echo "ERROR: Failed to deploy ezdvpp"
@@ -59,11 +66,35 @@ function build_common()
     return 0
 }
 
+function check_video_analysis_proto_version()
+{
+    proto_dir=$app_path/VideoAnalysisPost
+    pb_h_file=$app_path/VideoAnalysisPost/video_analysis_message.pb.h
+    proto_file=$app_path/VideoAnalysisPost/video_analysis_message.proto
+
+    check_proto_version $pb_h_file $proto_file
+    if [ $? -eq 1 ];then
+        echo "ERROR: check video analysis proto code failed"
+        return 1
+    fi
+
+    echo "Regenerate proto code success"
+    return 0   
+}
+
 function main()
 {
     echo "Modify param information in graph.config..."
     check_param_configure
     if [ $? -ne 0 ];then
+        echo "ERROR: modify param information in graph.config failed" 
+        return 1
+    fi
+
+    echo "Check video analysis proto"
+    check_video_analysis_proto_version
+    if [ $? -ne 0 ];then
+        echo "ERROR: check video analysis proto failed"
         return 1
     fi
 
@@ -73,7 +104,7 @@ function main()
             rm -rf ${script_path}/Tag
             build_common
             if [ $? -ne 0 ];then
-                echo "ERROR: Failed to deploy commn lib"
+                echo "ERROR: Failed to deploy common lib"
                 return 1
             else
                 echo "success" > ${script_path}/Tag
@@ -81,7 +112,7 @@ function main()
         else
             [[ "success" = `cat ${script_path}/Tag | grep "^success$"` ]] || build_common
             if [ $? -ne 0 ];then
-                echo "ERROR: Failed to deploy commn lib"
+                echo "ERROR: Failed to deploy common lib"
                 return 1
             else
                 echo "success" > ${script_path}/Tag
@@ -90,7 +121,7 @@ function main()
     else
         build_common
         if [ $? -ne 0 ];then
-            echo "ERROR: Failed to deploy commn lib"
+            echo "ERROR: Failed to deploy common lib"
             return 1
         else
             echo "success" > ${script_path}/Tag
