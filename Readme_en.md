@@ -219,34 +219,23 @@ Before running the application, obtain the source code package and configure the
 
 1.  Open the corresponding project.
     
-    Enter the “**MindStudio-ubuntu/bin**” directory after decompressing the installation package in the command line, for example, $HOME/MindStudio-ubuntu/bin. Execute the following command to start Mind Studio:
+    Enter the “**MindStudio-ubuntu/bin**” directory after decompressing the installation package in the command line, for example, $HOME/MindStudio-ubuntu/bin. Run the following command to start Mind Studio:
 
     **./MindStudio.sh**
 
-    After successfully starting Mind Studio, open **sample-videoanalysisperson** project，as shown in [Figure 8](#en-us_topic_0182554628_fig138681281084)
+    After successfully starting Mind Studio, open **sample-videoanalysiscar** project，as shown in [Figure 8](#zh-cn_topic_0203223303_fig721144422212)
 
-    **Figure 8**  Open videoanalysisperson project<a name="en-us_topic_0182554628_fig138681281084"></a>  
-    ![](figures/打开videoanalysisperson工程.png "Open videoanalysisperson project")
-    
-    以Mind Studio安装用户在命令行中进入安装包解压后的“MindStudio-ubuntu/bin”目录，如：$HOME/MindStudio-ubuntu/bin。执行如下命令启动Mind Studio
-
-    **./MindStudio.sh**
-
-    启动成功后，打开**sample-videoanalysiscar**工程，如[图8](#zh-cn_topic_0203223303_fig721144422212)所示。
-
-    **图 8**  打开sample-videoanalysiscar工程<a name="zh-cn_topic_0203223303_fig721144422212"></a>  
-    
-
+    **Figure 8**  Open videoanalysisperson project<a name="zh-cn_topic_0203223303_fig721144422212"></a>  
     ![](figures/打开工程项目-车辆检测.png)
 
-2.  在src/param\_configure.conf文件中配置相关工程信息。
+2.  Configure related project information in the **src/param\_configure.conf**
 
-    **图 9**  配置文件路径<a name="zh-cn_topic_0203223303_fig1557065718252"></a>  
-    
 
+    **Figure 9**  Configure file path<a name="zh-cn_topic_0203223303_fig1557065718252"></a>  
     ![](figures/videocar_src.png)
-
-    该配置文件内容如下：
+   
+    
+    The configuration file is as follows:
 
     ```
     remote_host=
@@ -254,15 +243,16 @@ Before running the application, obtain the source code package and configure the
     video_path_of_host=
     rtsp_video_stream=
     ```
+    
+    Following parameter configuration need to be added manually：
 
-    需要手动添加参数配置:
-
-    -   remote\_host：配置为Atlas 200 DK开发者板的IP地址。
-    -   presenter\_view\_app\_name: 用户自定义的在PresenterServer界面展示的View Name，此View Name需要在Presenter Server展示界面唯一，只能为大小写字母、数字、“\_”的组合，位数3\~20。
-    -   video\_path\_of\_host：配置为HOST侧的视频文件的绝对路径。
-    -   rtsp\_video\_stream：配置为RTSP视频流的URL。
-
-    视频文件配置示例如下：
+    -   remote\_host：this parameter indicates the IP address of Atlas 200 DK developer board.
+    -   presenter\_view\_app\_name: The user-defined View Name on the PresenterServer interface, this View Name needs to be unique  on the Presenter Server. It can only be a combination of uppercase and lowercase letters, numbers, and "\_", with a digit of 3 \~20.
+    -   video\_path\_of\_host：absolute path of video file on the HOST.
+    -   rtsp\_video\_stream：URL of RTSP video streams.
+    
+    An example of video file configuration is as follows:
+   
 
     ```
     remote_host=192.168.1.2
@@ -270,8 +260,8 @@ Before running the application, obtain the source code package and configure the
     video_path_of_host=/home/HwHiAiUser/car.mp4
     rtsp_video_stream=
     ```
+    An example of Rtsp video streams configuration is as follows:
 
-    Rtsp视频流配置示例如下：
 
     ```
     remote_host=192.168.1.2
@@ -280,118 +270,122 @@ Before running the application, obtain the source code package and configure the
     rtsp_video_stream=rtsp://192.168.2.37:554/cam/realmonitor?channel=1&subtype=0
     ```
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   参数_remote\_host__和_presenter\_view\_app\_name:必须全部填写，否则无法通过build。  
-    >-   注意所填参数不用使用“”。  
-    >-   参数video\_path\_of\_host和rtsp\_video\_stream必须至少填写一项  
-    >-   当前RTSP视频流只支持rtsp://ip:port/path格式，如果需要使用其它格式的url，需要把video\_decode.cpp中的IsValidRtsp函数去除，或者直接返回true，跳过正则表达式匹配。  
-    >-   本样例中提供的RTSP流地址不可以直接使用。如果需要使用RTSP，请在本地使用live555或其它方式制作RTSP视频流，并且可以在VLC中播放。然后将本地制作好的RTSP视频流的URL填入配置文件的相应参数中，即可运行。  
+    >![](public_sys-resources/icon-note.gif) **NOTE：**   
+    >-   The parameters **_remote\_host__** and **presenter\_view\_app\_name**: must be filled in，otherwise build cannot be passed.
+    >-   Note that the "" symbol is no need to be used when filling in parameters.
+    >-   At least one of the parameters **video\_path\_of\_host** and **rtsp\_video\_stream** must be filled in.
+    >-   Current RTSP video streams only support rtsp://ip:port/path format, if other urls format is need to be used, the **IsValidRtsp**  function in the **video\_decode.cpp** should be removed, or directly return true to skip regular expression matching.
+    >-   The RTSP streams address in this example cannot be used directly. If you need to use RTSP, please use live555 or other methods to make RTSP video streams locally, and it can be played in VLC, then fill the URL of the locally made RTSP video streams into the corresponding parameters of the configuration file.  
 
-3.  开始编译，打开Mind Studio工具，在工具栏中点击**Build \> Build \> Build-Configuration**。如[图10](#zh-cn_topic_0203223303_fig13819202814301)所示，会在目录下生成build和run文件夹。
+3.  Begin to compile, open **Mind Studio** tool, click **Build \> Build \> Build-Configuration** in the toolbar, shown as [Figure 10](#zh-cn_topic_0203223303_fig13819202814301), **build** and **run** folders will be generated under the directory.
 
-    **图 10**  编译操作及生成文件<a name="zh-cn_topic_0203223303_fig13819202814301"></a>  
+    **Figure 10**  Compile operations and generate files<a name="zh-cn_topic_0203223303_fig13819202814301"></a>  
     
 
     ![](figures/videocar_build.png)
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >首次编译工程时，**Build \> Build**为灰色不可点击状态。需要点击**Build \> Edit Build Configuration**，配置编译参数后再进行编译。  
+    >![](public_sys-resources/icon-note.gif) **NOTE：**   
+    >When you compile the project for the first time, **Build \> Build** is gray and not clickable. Your need to click **Build \> Edit Build Configuration**, configure the compilation parameters and then compile.  
     >![](figures/build_configuration.png)  
 
-4.  <a name="zh-cn_topic_0203223303_li499911453439"></a>启动Presenter Server。
+4.  <a name="zh-cn_topic_0203223303_li499911453439"></a>Start Presenter Server.
 
-    打开Mindstudio工具的Terminal，此时默认在[步骤1](#zh-cn_topic_0203223303_li953280133816)中的代码存放路径下，执行如下命令在后台启动Video Analysiscar应用的Presenter Server主程序。如[图 启动PresenterServer](zh-cn_topic_0203223303.md#fig423515251067)所示。
+    Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223303_li953280133816), run the following command to start the Presenter Server main program of the **Video Analysiscar**application, shown as [Figure 11](zh-cn_topic_0203223303.md#fig423515251067)所示。
 
     **bash run\_present\_server.sh**
 
-    **图 11**  启动PresenterServer<a name="zh-cn_topic_0203223303_fig102142024389"></a>  
+    **Figure 11**  Start PresenterServer<a name="zh-cn_topic_0203223303_fig102142024389"></a>  
     
 
     ![](figures/videocar_run_1.png)
+    
+    -   When the message "Please choose one to show the presenter in browser (default: 127.0.0.1):" is displayed, enter the IP address used for accessing the Presenter Server service in the browser. Generally, the IP address is the IP address for accessing the Mind Studio service.
+    
+        As shown in [Figure 12](#zh-cn_topic_0203223303_fig73590910118), Select the IP address used by the browser to access the Presenter Server service in "Current environment valid ip list" and enter the path for storing video analysis data.
 
-    -   当提示“Please choose one to show the presenter in browser\(default: 127.0.0.1\):“时，请输入在浏览器中访问Presenter Server服务所使用的IP地址（一般为访问Mind Studio的IP地址）。
-
-        如[图12](#zh-cn_topic_0203223303_fig73590910118)所示，请在“Current environment valid ip list“中选择通过浏览器访问Presenter Server服务使用的IP地址，并输入存储视频解析数据的路径。
-
-        **图 12**  工程部署示意图<a name="zh-cn_topic_0203223303_fig73590910118"></a>  
+        **Figure 12**  Project deployment<a name="zh-cn_topic_0203223303_fig73590910118"></a>  
         
 
         ![](figures/videocar_run_2.png)
+    
+    -   When the message "Please input an absolute path to storage video analysis data:" is displayed, enter the absolute path for storing video analysis data in **Mind Studio**. The **Mind Studio** user must have the read and write permissions. If the path does not exist, the script is automatically created.
+    
 
-    -   当提示“Please input a absolute path to storage video analysis data:“时，请输入Mind Studio中的绝对路径用于存储视频解析数据，此路径Mind Studio用户需要有读写权限，若此路径不存在，脚本会自动创建。
+    As shown in [Figure 13](#zh-cn_topic_0203223303_fig19953175965417) it means **presenter\_server**  service starts successfully.
 
-    如[图13](#zh-cn_topic_0203223303_fig19953175965417)所示，表示presenter\_server的服务启动成功。
-
-    **图 13**  Presenter Server进程启动<a name="zh-cn_topic_0203223303_fig19953175965417"></a>  
+    **Figure 13**  Starting the Presenter Server process<a name="zh-cn_topic_0203223303_fig19953175965417"></a>  
     
 
     ![](figures/videocar_run_3.png)
+    
+    Use the URL shown in the preceding figure to log in to Presenter Server (only the Chrome browser is supported). The IP address is that entered in [Figure 12](#zh-cn_topic_0203223303_fig73590910118) and the default port number is 7005. The following figure indicates that Presenter Server is started successfully.
+    
+   
+     **Figure 14**  Home page<a name="zh-cn_topic_0203223303_fig129539592546"></a>  
+    ![](figures/主页显示.png "Home page")
+     
+    The following figure shows the IP address used by the **Presenter Server** and **Mind Studio** to communicate with the Atlas 200 DK.
+    
+    **Figure 15**  Example IP Address<a name="zh-cn_topic_0203223303_fig195318596543"></a>  
+    ![](figures/IP地址示例.png "Example IP Address")
 
-    使用上图提示的URL登录Presenter Server，仅支持Chrome浏览器，IP地址为[图12](#zh-cn_topic_0203223303_fig73590910118)中输入的IP地址，端口号默为7005，如下图所示，表示Presenter Server启动成功。
+    -   The IP address of the Atlas 200 DK developer board is 192.168.1.2 (connected in USB mode).
+    -   The IP address used by the **Presenter Server** to communicate with the Atlas 200 DK is in the same network segment as the IP address of the Atlas 200 DK on the UI Host server. For example: 192.168.1.223.
+    -   The following is an example of accessing the IP address of the **Presenter Server** using a browser: 10.10.0.1, because the Presenter Server and **Mind Studio** are deployed on the same server, the IP address is also the IP address for accessing the Mind Studio through the browser.
 
-    **图 14**  主页显示<a name="zh-cn_topic_0203223303_fig129539592546"></a>  
-    ![](figures/主页显示.png "主页显示")
+5.  Car detection application can parse local videos and RTSP video streams.
+    -    To parse a local video, upload the video file to the Host.
 
-    Presenter Server、Mind Studio与Atlas 200 DK之间通信使用的IP地址示例如下图所示：
+         For example, upload the video file **car.mp4** to the **"/home/HwHiAiUser/"** directory on the host.
 
-    **图 15**  IP地址示例<a name="zh-cn_topic_0203223303_fig195318596543"></a>  
-    ![](figures/IP地址示例.png "IP地址示例")
-
-    -   Atlas 200 DK开发者板使用的IP地址为192.168.1.2（USB方式连接）。
-    -   Presenter Server与Atlas 200 DK通信的IP地址为UI Host服务器中与Atlas 200 DK在同一网段的IP地址，例如：192.168.1.223。
-    -   通过浏览器访问Presenter Server的IP地址本示例为：10.10.0.1，由于Presenter Server与Mind Studio部署在同一服务器，此IP地址也为通过浏览器访问Mind Studio的IP。
-
-5.  车辆检测应用支持解析本地视频和RTSP视频流。
-    -   如果需要解析本地视频，需要将视频文件传到Host侧。
-
-        例如将视频文件car.mp4上传到Host侧的“/home/HwHiAiUser/“目录下。
-
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >支持H264与H265格式的MP4文件，如果MP4文件需要剪辑，建议使用开源工具ffmpeg，使用其他工具剪辑的视频文件ffmpeg工具可能不支持解析。  
-
-    -   如果仅解析RTSP视频流，本步骤可跳过。
+        >![](public_sys-resources/icon-note.gif) **NOTE：**   
+        >H264 and H265 format MP4 files are supported，the open source tool FFmpeg is recommended if MP4 files need to be edited, because FFmpeg tools may fail to parse video files edited using other tools.
+        
+    -   if you only parse RTSP video streams, this step can be skipped.
 
 
-## 运行<a name="zh-cn_topic_0203223303_section6245151616426"></a>
+## Running<a name="zh-cn_topic_0203223303_section6245151616426"></a>
 
-1.  运行车辆检测应用程序
+1.  Run the Car Detection application
 
-    在Mindstudio工具的工具栏中找到Run按钮，点击**Run \> Run 'sample-videoanalysiscar'**，如[图16](#zh-cn_topic_0203223303_fig12953163061713)所示，可执行程序已经在开发板执行。
 
-    **图 16**  程序运行示意图<a name="zh-cn_topic_0203223303_fig12953163061713"></a>  
+    Find **Run** button in the toolbar of **Mind Studio** tool, click **Run \> Run 'sample-videoanalysiscar'**, as shown in [Figure 16](#zh-cn_topic_0203223303_fig12953163061713), the executable program has been executed on the developer board.
+
+
+    **Figure 16**  Executed program<a name="zh-cn_topic_0203223303_fig12953163061713"></a>  
     
 
     ![](figures/videocar_run4.png)
 
-2.  使用启动Presenter Server服务时提示的URL登录 Presenter Server 网站（仅支持Chrome浏览器），详细可参考[4](#zh-cn_topic_0203223303_li499911453439)。
+2.  Log in to the **Presenter Server** website using the URL promoted when starting the **Presenter Server** service（only supports Chrome browser）, for details, please refer to [Step 4](#zh-cn_topic_0203223303_li499911453439)。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >车辆检测应用的Presenter Server最多支持2个  _presenter\_view\_app\_name_  同时显示。  
+    >![](public_sys-resources/icon-note.gif) **NOTE：**   
+    >**Presenter Server** of car detection supports up to two **_presenter\_view\_app\_name_** to display at the same time.
 
-    页面左侧树结构列出了视频所属app name以及通道名，中间列出了抽取的视频帧大图以及检测出的目标小图，点击下方小图后会在右侧列出详细的推理结果、评分。
+    The navigation tree on the left displays the **app name** and channel name of the video. The large image of the extracted video frame   and the detected target small image are displayed in the middle. After you click the small image, the detailed inference result and score are displayed on the right.
+    
+    This application supports car attribute detection, including identification of vehicle brands, vehicle colors, and license plates.
 
-    本应用支持车辆属性检测，包括车辆品牌、车辆颜色的识别和车牌号码识别。
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >车牌号码识别的网络模型，是通过程序自动生成的车牌作为训练集图片训练的，不是使用真实车牌图片训练的。所以该模型在识别真实车牌号码时准确度比较低，如果需要较高的准确度的模型，请自己搜集真实车牌图片作为训练集并训练。  
+    >![](public_sys-resources/icon-note.gif) **NOTE：**   
+    >In the network model of license plate recognition, the license plate images automatically generated by the program are trained as the training set, instead of using real license plate images. Therefore, this model has low accuracy in identifying real license plate numbers. If a high-accuracy model is required, collect real license plate images as the training set and train them.
 
 
-## 后续处理<a name="zh-cn_topic_0203223303_section1092612277429"></a>
+## Follow-up Operations<a name="zh-cn_topic_0203223303_section1092612277429"></a>
 
--   **停止车辆检测应用**
+-   **Stopping Car Detection Application**
 
-    视频程序分析完之后会自动退出，如[图17](#zh-cn_topic_0203223303_fig464152917203)所示。
+     After the video program is analyzed, it will automatically stop and exit, as shown in[Figure 17](#zh-cn_topic_0203223303_fig464152917203).
 
-    **图 17**  Video Analysiscar应用程序运行结束<a name="zh-cn_topic_0203223303_fig464152917203"></a>  
+    **图 17**  Video Analysiscar application stops<a name="zh-cn_topic_0203223303_fig464152917203"></a>  
     
 
     ![](figures/videocar_stop.png)
 
--   **停止Presenter Server服务**
+-   **Stopping Presenter Server service**
 
-    Presenter Server服务启动后会一直处于运行状态，若想停止车辆检测应用对应的Presenter Server服务，可执行如下操作。
+    The **Presenter Server** service is always in the running state after being started. To stop the Presenter Server service of the car detection application, perform the following operations: 
 
-    以Mind Studio安装用户在Mind Studio所在服务器的命令行中执行如下命令查看车辆检测应用对应的Presenter Server服务的进程。
+    Run the following command to check the process of the **Presenter Server** service corresponding to the car detection application as the **Mind Studio** installation user:
 
     **ps -ef | grep presenter | grep video\_analysis\_car**
 
@@ -400,30 +394,30 @@ Before running the application, obtain the source code package and configure the
     ascend 3655 20313 0 15:10 pts/24?? 00:00:00 python3 presenterserver/presenter_server.py --app video_analysis_car
     ```
 
-    如上所示  _3655_  即为车辆检测应用对应的Presenter Server服务的进程ID。
+    In the preceding information,  _3655_  indicates the process ID of the Presenter Server service corresponding to the car detection application.
 
-    若想停止此服务，执行如下命令：
+    To stop the service, run the following command:
 
     **kill -9** _3655_
 
--   **重启车辆检测应用时注意点**
+-   **Note on restarting Car Detection application**
 
-    重新启动车辆检测应用时请确保以下条件满足任意一个，否则会报错:
+    Please ensure that any of the following conditions are met when restarting the car detection application, otherwise an error will be reported:
+    
+    1.   Make sure the content in the path for saving video parsing data has been emptied:
+    
+         For example, the path for saving video parsing data is \\$HOME/videocar\_storage/video，where \\$HOME/videocar\_storage is the value of **"Please input a absolute path to storage video analysis data"** configured in [Step 4](#zh-cn_topic_0203223303_li499911453439), and video is the value of parameter **presenter\_view\_app\_name** in **param\_configure.conf** configuration file.
 
-    1.  请确保视频解析数据存储路径中内容已经清空。
+         When this condition is met, there is no need to restart the **Presenter Server**. Directly re-run **Run \> Run 'sample-videoanalysiscar'** to run the program.
 
-        例如：视频解析数据存储路径为\\$HOME/videocar\_storage/video，其中\\$HOME/videocar\_storage是执行[步骤4](#zh-cn_topic_0203223303_li499911453439)时配置的“Please input a absolute path to storage video analysis data”的值，video为**param\_configure.conf**配置文件中参数**presenter\_view\_app\_name**的值。
+    2.  If data has been saved in the video parsing saving path and you do not want to delete it, simply modify  the value of parameter **presenter\_view\_app\_name** in **param\_configure.conf** configuration file, and re-run **Build \> Rebuild** on the **Mind Studio** interface，then run **'sample-videoanalysiscar'**.
 
-        满足此条件情况下，无需重启Presenter Server，直接重新执行**Run \> Run 'sample-videoanalysiscar'**运行应用程序即可。
-
-    2.  视频解析数据存储路径中如果已有数据且不想删除，可以修改**param\_configure.conf**配置文件中**presenter\_view\_app\_name**参数的值，然后在Mind Studio界面中重新执行**Build \> Rebuild**，再执行**Run \> Run** **'sample-videoanalysiscar'**即可。
-
-        **param\_configure.conf**配置文件中参数**presenter\_view\_app\_name**的值如下所示。
+        The value of parameter **presenter\_view\_app\_name** in the **param\_configure.conf** configuration file is shown as below:
 
         ![](figures/车辆检测的用户配置文件.png)
 
-        满足此条件情况下，无需重启Presenter Server。
+        When this condition is met, there is no need to restart the **Presenter Server**.
 
-    3.  若重新启动Presenter Server，再运行车辆检测应用，在启动Presenter Server时请修改存储视频解析的数据的路径（不与之前存储路径重复），请参考[步骤4](#zh-cn_topic_0203223303_li499911453439)。
+    3.  if restart the **Presenter Server** and then run the car detection application, please modify the path for saving the video parsing data when starting **Presenter Server**（do not duplicate the previous saving path），refer to [Step 4](#zh-cn_topic_0203223303_li499911453439).
 
 
