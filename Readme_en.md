@@ -76,20 +76,22 @@ Before running the application, obtain the source code package and configure the
     </tbody>
     </table>
 
-3.   Log in to Ubuntu Server where Mind Studio is located as the Mind Studio installation user, confirm current DDK version and set the environment variable  **DDK\_HOME**, **tools\_version**, **NPU\_DEVICE\_LIB** and **LD\_LIBRARY\_PATH**.
+3.   Log in to Ubuntu Server where Mind Studio is located as the Mind Studio installation user, confirm current DDK version and set the  environment variable  **DDK\_HOME**, **tools\_version**, **NPU\_DEVICE\_LIB** and **LD\_LIBRARY\_PATH**.
 
-    1.  <a name="zh-cn_topic_0203223303_zh-cn_topic_0203223294_li61417158198"></a>Find current DDK version number.
+     1.  <a name="zh-cn_topic_0203223303_zh-cn_topic_0203223294_li61417158198"></a> Find current DDK version number.
 
-        Current DDK version number can be obtained by either Mind studio tool or DDK packages.
+         Current DDK version number can be obtained by either Mind studio tool or DDK packages.
 
-        - Using Mind studio tool.
-            choose **File \> Settings \> System Settings \> Ascend DDK** from the main menu of Mind Studio, DDK version inquiry page will display as [Figure 1](zh-cn_topic_0203223294.md#fig94023140222)
+         -    Using Mind studio tool.
+        
+              choose **File \> Settings \> System Settings \> Ascend DDK** from the main menu of Mind Studio, DDK version inquiry page will display as [Figure 1](zh-cn_topic_0203223294.md#fig94023140222).
             
-            **Figure 1** DDK version inquiry page<a name="zh-cn_topic_0203223303_zh-cn_topic_0203223294_fig17553193319118"></a>  
-            ![](figures/DDK版本号查询.png "DDK version inquiry page")
+              **Figure 1** DDK version inquiry page<a name="zh-cn_topic_0203223303_zh-cn_topic_0203223294_fig17553193319118"></a>  
+              ![](figures/DDK版本号查询.png "DDK version inquiry page")
     
-             **DDK Version** shows in this page is current DDK version, for example, **1.31.T15.B150**
-         - Using DDK package
+              **DDK Version** shows in this page is current DDK version, for example, **1.31.T15.B150**.
+             
+         -   Using DDK package
              
              Obtain DDK version by installed DDK package name.
              
@@ -101,124 +103,131 @@ Before running the application, obtain the source code package and configure the
              
              If the name of DDK package is **Ascend\_DDK-1.31.T15.B150-1.1.1-x86\_64.ubuntu16.04.tar.gz**, the DDK version would be **1.31.T15.B150**.
 
-    2.   Set the environment variable.
-    
-        **vim \~/.bashrc**
+     2.  Set the environment variable.
         
-        Run the following commands to add the environment variables  **DDK\_HOME**  and  **LD\_LIBRARY\_PATH**  to the last line:
+         **vim \~/.bashrc**
+        
+         Run the following commands to add the environment variables  **DDK\_HOME**  and  **LD\_LIBRARY\_PATH**  to the last line:
 
-        **export tools\_version=_1.31.X.X_**
+         **export tools\_version=_1.31.X.X_**
 
-        **export DDK\_HOME=\\$HOME/.mindstudio/huawei/ddk/\\$tools\_version/ddk**
+         **export DDK\_HOME=\\$HOME/.mindstudio/huawei/ddk/\\$tools\_version/ddk**
 
-        **export NPU\_DEVICE\_LIB=$DDK\_HOME/../RC/host-aarch64\_Ubuntu16.04.3/lib**
+         **export NPU\_DEVICE\_LIB=$DDK\_HOME/../RC/host-aarch64\_Ubuntu16.04.3/lib**
 
-        **export LD\_LIBRARY\_PATH=$DDK\_HOME/lib/x86\_64-linux-gcc5.4**
+         **export LD\_LIBRARY\_PATH=$DDK\_HOME/lib/x86\_64-linux-gcc5.4**
 
-        >![](public_sys-resources/icon-note.gif) **NOTE：**   
-        >-   **_1.31.X.X_** is the DDK version obtained from [Figure 1](#zh-cn_topic_0203223303_zh-cn_topic_0203223294_li61417158198), it needs be filled according to the inquiry result，for example, **1.31.T15.B150**  
+         >![](public_sys-resources/icon-note.gif) **NOTE：**   
+         >-   **_1.31.X.X_** is the DDK version obtained from [Figure 1](#zh-cn_topic_0203223303_zh-cn_topic_0203223294_li61417158198), it needs be filled according to the inquiry result，for example, **1.31.T15.B150**  
 
-        >-   If the environment variables have been added, this step can be skipped.
+         >-   If the environment variables have been added, this step can be skipped.
 
-        Enter  **:wq!**  to save and exit.
+         Enter  **:wq!**  to save and exit.
 
-        Run the following command for the environment variable to take effect:
+         Run the following command for the environment variable to take effect:
          
-        **source \~/.bashrc**
+         **source \~/.bashrc**
 
-4.  将原始网络模型转换为适配昇腾AI处理器的模型，模型转换有Mind Studio工具转换和命令行转换两种方式。
-    -   通过Mind Studio工具进行模型转换。
-        1.  在Mind Studio操作界面的顶部菜单栏中选择**Tools \> Model Convert**，进入模型转换界面。
-        2.  在弹出的**Model** **Conversion**操作界面中，进行模型转换配置。
-            -   Model File选择[步骤2](#zh-cn_topic_0203223303_li8221184418455)中下载的模型文件，此时会自动匹配到权重文件并填写在Weight File中。
-            -   Model Name填写为[表1](#zh-cn_topic_0203223303_table117203103464)对应的**模型名称**。
-            -   car\_color模型转换时的非默认配置如下：
-                -   car\_color\_inference一次处理10张图片，所以转换时需要将Nodes配置中的**N**修改为10。
+4.  Convert the source network to a model supported by Ascend AI processor. There are two ways for model conversion:  Mind Studio tool conversion and command line conversion.
 
-                    **图 2**  car\_color模型转换时Nodes配置。<a name="zh-cn_topic_0203223303_fig14958101714361"></a>  
+    -   Model conversion using Mind Studio tool
+        1.  Choose **Tool \> Convert** Model from the main menu of Mind Studio. The Convert Model page is displayed.
+        2.  On the **Model** **Convert** page, perform model conversion configuration.
+            -    Set **Model File** to model file installed in [Step 2](#zh-cn_topic_0203223303_li8221184418455), the weight file would be automatically matched and filled in **Weight File**.
+            -    Set **Model Name** to model name in [Table 1](#zh-cn_topic_0203223303_table117203103464)
+            -   The non-default configuration of **car\_color** model conversion is as follows:
+           
+                -   **car\_color\_inference** processes 10 images at a time. Therefore the value of **N** needs to be set to 10 during conversion.
+                    **Figure 2**  Nodes configuration during **car\_color** model conversion.<a name="zh-cn_topic_0203223303_fig14958101714361"></a>  
                     
-
                     ![](figures/videocar_model_1.png)
+                    
+                -    **Input Image Size** in AIPP configuration needs to be modified to 256, 240, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
+              
+                     ![](figures/videocar_model_2.png)
 
-                -   AIPP配置中的**Input Image Size**分别修改为256、224。此处需要128\*16对齐。**Model Image Format**需要修改为BGR888\_U8。
-
-                    ![](figures/videocar_model_2.png)
-
-            -   CAR\_TYPE模型转换时非默认配置如下：
-
-                AIPP配置中的**INPUT IMAGE SIZE**分别修改为256、224，此处需要128\*16对齐。**Model Image Format**需要修改为BGR888\_U8。
-
-                **图 3**  car\_type模型转换时AIPP配置<a name="zh-cn_topic_0203223303_fig193425535216"></a>  
-                ![](figures/car_type模型转换时AIPP配置.png "car_type模型转换时AIPP配置")
-
-            -   car\_plate\_detection模型转换时非默认配置如下：
-
-                AIPP配置中的**Input Image Size**分别修改为512、640，此处需要128\*16对齐。**Model Image Format**需要修改为BGR888\_U8。
-
-                **图 4**  car\_plate\_detection模型转换时AIPP配置<a name="zh-cn_topic_0203223303_fig1175817321825"></a>  
+            -   The non-default configuration for **CAR\_TYPE** model conversion is as follows:
                 
+                **Input Image Size** in AIPP configuration needs to be modified to 256、224, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
+                
+                **Figure 3**  AIPP configuration for **car\_type** model conversion<a name="zh-cn_topic_0203223303_fig193425535216"></a>  
+                ![](figures/car_type模型转换时AIPP配置.png "AIPP configuration for car\_type model conversion")
 
+            -   The non-default configuration for **car\_plate\_detection** model conversion is as follows:
+            
+                **Input Image Size** in AIPP configuration needs to be modified to 512、640, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
+             
+                **Figure 4**  AIPP configuration for **car\_plate\_detection** model conversion<a name="zh-cn_topic_0203223303_fig1175817321825"></a>  
+                
                 ![](figures/vidocar_model_4.png)
 
-            -   car\_plate\_recognition模型转换时非默认配置如下：
+            -   The non-default configuration for **car\_plate\_recognition** model conversion is as follows:   
+                 
+                **Input Image Size** in AIPP configuration needs to be modified to 384、80, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
 
-                AIPP配置中的**Input Image Size**分别修改为384、80，此处需要128\*16对齐。**Model Image Format**需要修改为BGR888\_U8。
-
-                **图 5**  car\_plate\_recognition模型转换时AIPP配置<a name="zh-cn_topic_0203223303_fig10486111811264"></a>  
+                **图 5**  AIPP configuration for **car\_plate\_recognition** model conversion<a name="zh-cn_topic_0203223303_fig10486111811264"></a>  
                 
-
                 ![](figures/videocar_model_5.png)
 
-            -   vgg\_ssd模型转换时非默认配置如下：
+            -   The non-default configuration for **vgg\_ssd** model conversion is as follows:
 
-                **Model Image Format**需要修改为BGR888\_U8。
+                **Model Image Format** needs to be set to BGR888\_U8。
 
-                **图 6**  vgg\_ssd模型转换时AIPP配置<a name="zh-cn_topic_0203223303_fig17951565245"></a>  
+                **Figure 6**  AIPP configuration for **vgg\_ssd** model conversion<a name="zh-cn_topic_0203223303_fig17951565245"></a>  
                 
-
                 ![](figures/videocar_model_6.png)
 
-        3.  单击**OK**开始转换模型。
-
-            car\_plate\_detection、vgg\_ssd模型在转换的时候，会有报错，错误信息如下图所示。
-
-            **图 7**  模型转换错误<a name="zh-cn_topic_0203223303_fig1842765585311"></a>  
+        3.  Click **OK** to start model conversion.
+            
+            During the conversion of the **car\_plate\_detection** and **vgg_ssd** models, the following error will be reported.
+            
+            **Figure 7**  Model conversion error<a name="zh-cn_topic_0203223303_fig1842765585311"></a>  
             
 
             ![](figures/model_facedetection_coversionfailed.png)
+            
+            Select **SSDDetectionOutput** from the **Suggestion** drop-down list box at the **DetectionOutput** layer and click Retry.
 
-            此时在DetectionOutput层的Suggestion中选择SSDDetectionOutput，并点击Retry。
-
-            模型转换成功后，后缀为.om的离线模型存放地址为：$HOME/modelzoo/xxx/device。
-
-            >![](public_sys-resources/icon-note.gif) **说明：**   
-            >-   Mindstudio模型转换中每一步的具体意义和参数说明可以参考[https://ascend.huawei.com/doc/mindstudio/2.1.0\(beta\)/zh/zh-cn\_topic\_0188462651.html](https://ascend.huawei.com/doc/mindstudio/2.1.0(beta)/zh/zh-cn_topic_0188462651.html)  
-            >-   XXX表示当前转换的模型名称，如car\_color.om存放地址为：$HOME/modelzoo/car\_color/device。  
-
-
-    -   命令行模式下模型转换。
-        1.  以Mind Studio安装用户进入存放原始模型的文件夹。
+            After successful conversion, a **.om** offline model is generated in the $HOME/modelzoo/xxx/device.
+            
+            >![](public_sys-resources/icon-note.gif) **NOTE：**   
+            
+            >-   The specific meaning and parameter description in each step of Mind Studio model conversion can refer to[https://ascend.huawei.com/doc/mindstudio/2.1.0\(beta\)/zh/zh-cn\_topic\_0188462651.html](https://ascend.huawei.com/doc/mindstudio/2.1.0(beta)/zh/zh-cn_topic_0188462651.html)  
+            >-   XXX indicates the name of currently converted model, for example, **car\_color.om** is saved at: $HOME/modelzoo/car\_color/device.
+            
+    -   Model conversion in command line mode:
+        
+        1.  Enter the folder where the source model is saved as the Mind Studio installation user.
 
             **cd $HOME/models/videoanalysiscar**
-
-        2.  调用omg工具执行以下命令进行模型转换。
+            
+        2.  Using omg tool to run the following command to perform model conversion.
 
             ```
             ${DDK_HOME}/uihost/bin/omg --output="./XXX" --model="./XXX.prototxt" --framework=0 --ddk_version=${tools_version} --weight="./XXX.caffemodel" --input_shape=`head -1 $HOME/AscendProjects/sample-videoanalysiscar/MyModel/shape_XXX` --insert_op_conf=$HOME/AscendProjects/sample-videoanalysiscar/MyModel/aipp_XXX.cfg --op_name_map=$HOME/AscendProjects/sample-videoanalysiscar/MyModel/reassign_operators
             ```
 
-            >![](public_sys-resources/icon-note.gif) **说明：**   
-            >-   input\_shape、insert\_op\_conf、op\_name\_map所需要的文件都在源码所在路径下的“sample-videoanalysiscar/MyModel”目录下，请根据您实际的源码所在路径配置这些文件路径。  
-            >-   **XXX**为[表1](#zh-cn_topic_0203223303_table117203103464)中的模型名称，转换时请替换填入需要转换模型的模型名称。其中car\_plate\_recognition、car\_type、car\_color模型转换时不需要op\_name\_map参数，如果没有删除不需要的参数，转换模型时会有报错。  
-            >-   每个参数的具体意义可以在以下文档中了解[https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn\_topic\_0165968579.html](https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn_topic_0165968579.html)  
+            >![](public_sys-resources/icon-note.gif) **NOTE：**   
+            
+            >-  All files required for **input\_shape**、**insert\_op\_conf**、**op\_name\_mapare** are in the “sample-videoanalysiscar/MyModel” directory under the path where the source code is located，please configure these file paths according to the path where your actual source code is located.
+            >-   **XXX** is the name of model in [Table 1](#zh-cn_topic_0203223303_table117203103464), please fill in the name of model to be converted during conversion. The **car\_plate\_recognition**、**car\_type**、**car\_color** does not need the **op\_name\_map** parameter for model conversion. An error will be reported during model conversion if the unnecessary parameters are not deleted.
+            >-   The specific meaning of each parameter can be found in the following documents[https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn\_topic\_0165968579.html](https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn_topic_0165968579.html)  
+            
+5.  Upload the converted model file（.om file）to “**sample-videoanalysiscar/script**” directory  in the source code path in [Step 1](#zh-cn_topic_0203223303_li953280133816)
 
+## Compile<a name="zh-cn_topic_0203223303_section1759513564117"></a>
 
-5.  将转换好的模型文件（.om文件）上传到[步骤1](#zh-cn_topic_0203223303_li953280133816)中源码所在路径的“**sample-videoanalysiscar/script**”目录下。
+1.  Open the corresponding project.
+    
+    Enter the “**MindStudio-ubuntu/bin**” directory after decompressing the installation package in the command line, for example, $HOME/MindStudio-ubuntu/bin. Execute the following command to start Mind Studio:
 
-## 编译<a name="zh-cn_topic_0203223303_section1759513564117"></a>
+    **./MindStudio.sh**
 
-1.  打开对应的工程。
+    After successfully starting Mind Studio, open **sample-videoanalysisperson** project，as shown in [Figure 8](#en-us_topic_0182554628_fig138681281084)
 
+    **Figure 8**  Open videoanalysisperson project<a name="en-us_topic_0182554628_fig138681281084"></a>  
+    ![](figures/打开videoanalysisperson工程.png "Open videoanalysisperson project")
+    
     以Mind Studio安装用户在命令行中进入安装包解压后的“MindStudio-ubuntu/bin”目录，如：$HOME/MindStudio-ubuntu/bin。执行如下命令启动Mind Studio
 
     **./MindStudio.sh**
