@@ -142,7 +142,7 @@ Before running the application, obtain the source code package and configure the
                     
                     ![](figures/videocar_model_1.png)
                     
-                -    **Input Image Size** in AIPP configuration needs to be modified to 256, 240, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
+                -    **Input Image Size** in AIPP configuration needs to be set to 256, 240, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
               
                      ![](figures/videocar_model_2.png)
 
@@ -188,7 +188,7 @@ Before running the application, obtain the source code package and configure the
             
             Select **SSDDetectionOutput** from the **Suggestion** drop-down list box at the **DetectionOutput** layer and click Retry.
 
-            After successful conversion, a **.om** offline model is generated in the $HOME/modelzoo/xxx/device.
+            After successful conversion, a **.om** offline model is generated in the **$HOME/modelzoo/xxx/device**.
             
             >![](public_sys-resources/icon-note.gif) **NOTE：**   
             
@@ -209,7 +209,7 @@ Before running the application, obtain the source code package and configure the
 
             >![](public_sys-resources/icon-note.gif) **NOTE：**   
             
-            >-  All files required for **input\_shape**、**insert\_op\_conf**、**op\_name\_mapare** are in the “sample-videoanalysiscar/MyModel” directory under the path where the source code is located，please configure these file paths according to the path where your actual source code is located.
+            >-  All files required for **input\_shape**、**insert\_op\_conf**、**op\_name\_map** are in the “sample-videoanalysiscar/MyModel” directory under the path where the source code is located，please configure these file paths according to the path where your actual source code is located.
             >-   **XXX** is the name of model in [Table 1](#zh-cn_topic_0203223303_table117203103464), please fill in the name of model to be converted during conversion. The **car\_plate\_recognition**、**car\_type**、**car\_color** does not need the **op\_name\_map** parameter for model conversion. An error will be reported during model conversion if the unnecessary parameters are not deleted.
             >-   The specific meaning of each parameter can be found in the following documents[https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn\_topic\_0165968579.html](https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn_topic_0165968579.html)  
             
@@ -290,7 +290,7 @@ Before running the application, obtain the source code package and configure the
 
 4.  <a name="zh-cn_topic_0203223303_li499911453439"></a>Start Presenter Server.
 
-    Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223303_li953280133816), run the following command to start the Presenter Server main program of the **Video Analysiscar**application, shown as [Figure 11](zh-cn_topic_0203223303.md#fig423515251067)所示。
+    Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223303_li953280133816), run the following command to start the **Presenter Server** main program of the **Video Analysiscar**application, as shown in [Figure 11](zh-cn_topic_0203223303.md#fig423515251067).
 
     **bash run\_present\_server.sh**
 
