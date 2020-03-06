@@ -192,8 +192,8 @@ Before running the application, obtain the source code package and configure the
             
             >![](public_sys-resources/icon-note.gif) **NOTE：**   
             
-            >-   The specific meaning and parameter description in each step of Mind Studio model conversion can refer to[https://ascend.huawei.com/doc/mindstudio/2.1.0\(beta\)/zh/zh-cn\_topic\_0188462651.html](https://ascend.huawei.com/doc/mindstudio/2.1.0(beta)/zh/zh-cn_topic_0188462651.html)  
-            >-   XXX indicates the name of currently converted model, for example, **car\_color.om** is saved at: $HOME/modelzoo/car\_color/device.
+            >-   The specific meaning and parameter description in each step of **Mind Studio** model conversion can refer to[https://ascend.huawei.com/doc/mindstudio/2.1.0\(beta\)/zh/zh-cn\_topic\_0188462651.html](https://ascend.huawei.com/doc/mindstudio/2.1.0(beta)/zh/zh-cn_topic_0188462651.html)  
+            >-   XXX indicates the name of currently converted model, for example, **car\_color.om** is saved in: **$HOME/modelzoo/car\_color/device**.
             
     -   Model conversion in command line mode:
         
@@ -219,7 +219,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  Open the corresponding project.
     
-    Enter the “**MindStudio-ubuntu/bin**” directory after decompressing the installation package in the command line, for example, $HOME/MindStudio-ubuntu/bin. Run the following command to start Mind Studio:
+    Enter the “**MindStudio-ubuntu/bin**” directory after decompressing the installation package in the command line, for example, **$HOME/MindStudio-ubuntu/bin**. Run the following command to start **Mind Studio**:
 
     **./MindStudio.sh**
 
@@ -231,7 +231,7 @@ Before running the application, obtain the source code package and configure the
 2.  Configure related project information in the **src/param\_configure.conf**
 
 
-    **Figure 9**  Configure file path<a name="zh-cn_topic_0203223303_fig1557065718252"></a>  
+    **Figure 9**  Configuration file path<a name="zh-cn_topic_0203223303_fig1557065718252"></a>  
     ![](figures/videocar_src.png)
    
     
@@ -244,7 +244,7 @@ Before running the application, obtain the source code package and configure the
     rtsp_video_stream=
     ```
     
-    Following parameter configuration need to be added manually：
+    Following parameter configuration needs to be added manually：
 
     -   remote\_host：this parameter indicates the IP address of Atlas 200 DK developer board.
     -   presenter\_view\_app\_name: The user-defined View Name on the PresenterServer interface, this View Name needs to be unique  on the Presenter Server. It can only be a combination of uppercase and lowercase letters, numbers, and "\_", with a digit of 3 \~20.
@@ -279,7 +279,7 @@ Before running the application, obtain the source code package and configure the
 
 3.  Begin to compile, open **Mind Studio** tool, click **Build \> Build \> Build-Configuration** in the toolbar, shown as [Figure 10](#zh-cn_topic_0203223303_fig13819202814301), **build** and **run** folders will be generated under the directory.
 
-    **Figure 10**  Compile operations and generate files<a name="zh-cn_topic_0203223303_fig13819202814301"></a>  
+    **Figure 10**  Compilation operation and generated files<a name="zh-cn_topic_0203223303_fig13819202814301"></a>  
     
 
     ![](figures/videocar_build.png)
