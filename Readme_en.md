@@ -84,7 +84,7 @@ Before running the application, obtain the source code package and configure the
 
          -    Using Mind studio tool.
         
-              choose **File \> Settings \> System Settings \> Ascend DDK** from the main menu of Mind Studio, DDK version inquiry page will display as [Figure 1](zh-cn_topic_0203223294.md#fig94023140222).
+              choose **File \> Settings \> System Settings \> Ascend DDK** from the main menu of **Mind Studio**, DDK version inquiry page will display as [Figure 1](zh-cn_topic_0203223294.md#fig94023140222).
             
               **Figure 1** DDK version inquiry page<a name="zh-cn_topic_0203223303_zh-cn_topic_0203223294_fig17553193319118"></a>  
               ![](figures/DDK版本号查询.png "DDK version inquiry page")
@@ -223,7 +223,7 @@ Before running the application, obtain the source code package and configure the
 
     **./MindStudio.sh**
 
-    After successfully starting Mind Studio, open **sample-videoanalysiscar** project，as shown in [Figure 8](#zh-cn_topic_0203223303_fig721144422212)
+    After successfully starting **Mind Studio**, open **sample-videoanalysiscar** project，as shown in [Figure 8](#zh-cn_topic_0203223303_fig721144422212)
 
     **Figure 8**  Open videoanalysisperson project<a name="zh-cn_topic_0203223303_fig721144422212"></a>  
     ![](figures/打开工程项目-车辆检测.png)
@@ -299,7 +299,7 @@ Before running the application, obtain the source code package and configure the
 
     ![](figures/videocar_run_1.png)
     
-    -   When the message "Please choose one to show the presenter in browser (default: 127.0.0.1):" is displayed, enter the IP address used for accessing the Presenter Server service in the browser. Generally, the IP address is the IP address for accessing the Mind Studio service.
+    -   When the message "Please choose one to show the presenter in browser (default: 127.0.0.1):" is displayed, enter the IP address used for accessing the **Presenter Server** service in the browser. Generally, the IP address is the IP address for accessing the **Mind Studio** service.
     
         As shown in [Figure 12](#zh-cn_topic_0203223303_fig73590910118), Select the IP address used by the browser to access the Presenter Server service in "Current environment valid ip list" and enter the path for storing video analysis data.
 
@@ -318,7 +318,7 @@ Before running the application, obtain the source code package and configure the
 
     ![](figures/videocar_run_3.png)
     
-    Use the URL shown in the preceding figure to log in to Presenter Server (only the Chrome browser is supported). The IP address is that entered in [Figure 12](#zh-cn_topic_0203223303_fig73590910118) and the default port number is 7005. The following figure indicates that Presenter Server is started successfully.
+    Use the URL shown in the preceding figure to log in to **Presenter Server** (only the Chrome browser is supported). The IP address is that entered in [Figure 12](#zh-cn_topic_0203223303_fig73590910118) and the default port number is 7005. The following figure indicates that Presenter Server is started successfully.
     
    
      **Figure 14**  Home page<a name="zh-cn_topic_0203223303_fig129539592546"></a>  
@@ -338,10 +338,10 @@ Before running the application, obtain the source code package and configure the
 
          For example, upload the video file **car.mp4** to the **"/home/HwHiAiUser/"** directory on the host.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE：**   
-        >H264 and H265 format MP4 files are supported，the open source tool FFmpeg is recommended if MP4 files need to be edited, because FFmpeg tools may fail to parse video files edited using other tools.
+         >![](public_sys-resources/icon-note.gif) **NOTE：**   
+         >H264 and H265 format MP4 files are supported，the open source tool FFmpeg is recommended if MP4 files need to be edited, because FFmpeg tools may fail to parse video files edited using other tools.
         
-    -   if you only parse RTSP video streams, this step can be skipped.
+     -   if you only parse RTSP video streams, this step can be skipped.
 
 
 ## Running<a name="zh-cn_topic_0203223303_section6245151616426"></a>
