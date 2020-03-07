@@ -17,7 +17,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  <a name="zh-cn_topic_0203223303_li953280133816"></a>Obtain the source code package.
 
-    Download all the code in the sample-videoanalysiscar repository at [https://github.com/Atlas200DKTest/sample-videoanalysiscar/tree/1.3x.0.0/](https://github.com/Atlas200DKTest/sample-videoanalysiscar/tree/1.3x.0.0/) to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  $HOME/AscendProjects/sample-videoanalysiscar.
+    Download all the code in the sample-videoanalysiscar repository at [https://github.com/Atlas200DKTest/sample-videoanalysiscar/tree/1.3x.0.0/](https://github.com/Atlas200DKTest/sample-videoanalysiscar/tree/1.3x.0.0/) to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  **$HOME/AscendProjects/sample-videoanalysiscar**.
 
 2. <a name="zh-cn_topic_0203223303_li8221184418455"></a>Obtain the source network model required by the application.
 
@@ -138,11 +138,12 @@ Before running the application, obtain the source code package and configure the
             -   The non-default configuration of **car\_color** model conversion is as follows:
            
                 -   **car\_color\_inference** processes 10 images at a time. Therefore the value of **N** needs to be set to 10 during conversion.
+                
                     **Figure 2**  Nodes configuration during **car\_color** model conversion.<a name="zh-cn_topic_0203223303_fig14958101714361"></a>  
                     
                     ![](figures/videocar_model_1.png)
                     
-                -    **Input Image Size** in AIPP configuration needs to be set to 256, 240, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
+                -    **Input Image Size** in AIPP configuration needs to be set to 256, 224, 128 \*16 alignment is required here, for **Model Image Format**, select BGR888\_U8.
               
                      ![](figures/videocar_model_2.png)
 
@@ -290,7 +291,7 @@ Before running the application, obtain the source code package and configure the
 
 4.  <a name="zh-cn_topic_0203223303_li499911453439"></a>Start Presenter Server.
 
-    Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223303_li953280133816), run the following command to start the **Presenter Server** main program of the **Video Analysiscar**application, as shown in [Figure 11](zh-cn_topic_0203223303.md#fig423515251067).
+    Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223303_li953280133816), run the following command to start the **Presenter Server** main program of the **Video Analysiscar** application, as shown in [Figure 11](zh-cn_topic_0203223303.md#fig423515251067).
 
     **bash run\_present\_server.sh**
 
@@ -301,14 +302,14 @@ Before running the application, obtain the source code package and configure the
     
     -   When the message "Please choose one to show the presenter in browser (default: 127.0.0.1):" is displayed, enter the IP address used for accessing the **Presenter Server** service in the browser. Generally, the IP address is the IP address for accessing the **Mind Studio** service.
     
-        As shown in [Figure 12](#zh-cn_topic_0203223303_fig73590910118), Select the IP address used by the browser to access the Presenter Server service in "Current environment valid ip list" and enter the path for storing video analysis data.
+        As shown in [Figure 12](#zh-cn_topic_0203223303_fig73590910118), Select the IP address used by the browser to access the Presenter Server service in **"Current environment valid ip list"** and enter the path for storing video analysis data.
 
         **Figure 12**  Project deployment<a name="zh-cn_topic_0203223303_fig73590910118"></a>  
         
 
         ![](figures/videocar_run_2.png)
     
-    -   When the message "Please input an absolute path to storage video analysis data:" is displayed, enter the absolute path for storing video analysis data in **Mind Studio**. The **Mind Studio** user must have the read and write permissions. If the path does not exist, the script is automatically created.
+    -   When the message **"Please input an absolute path to storage video analysis data:"** is displayed, enter the absolute path for storing video analysis data in **Mind Studio**. The **Mind Studio** user must have the read and write permissions. If the path does not exist, the script is automatically created.
     
 
     As shown in [Figure 13](#zh-cn_topic_0203223303_fig19953175965417) it means **presenter\_server**  service starts successfully.
@@ -406,7 +407,7 @@ Before running the application, obtain the source code package and configure the
     
     1.   Make sure the content in the path for saving video parsing data has been emptied:
     
-         For example, the path for saving video parsing data is \\$HOME/videocar\_storage/video，where \\$HOME/videocar\_storage is the value of **"Please input a absolute path to storage video analysis data"** configured in [Step 4](#zh-cn_topic_0203223303_li499911453439), and video is the value of parameter **presenter\_view\_app\_name** in **param\_configure.conf** configuration file.
+         For example, the path for saving video parsing data is **\\$HOME/videocar\_storage/video**，where **\\$HOME/videocar\_storage** is the value of **"Please input a absolute path to storage video analysis data"** configured in [Step 4](#zh-cn_topic_0203223303_li499911453439), and video is the value of parameter **presenter\_view\_app\_name** in **param\_configure.conf** configuration file.
 
          When this condition is met, there is no need to restart the **Presenter Server**. Directly re-run **Run \> Run 'sample-videoanalysiscar'** to run the program.
 
