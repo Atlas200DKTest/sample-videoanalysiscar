@@ -128,9 +128,9 @@ Before running the application, obtain the source code package and configure the
          
          **source \~/.bashrc**
 
-4.  Convert the source network to a model supported by Ascend AI processor. There are two ways for model conversion:  Mind Studio tool conversion and command line conversion.
+4.  Convert the source network to a model supported by Ascend AI processor. There are two ways for model conversion:  **Mind Studio** tool conversion and command line conversion.
 
-    -   Model conversion using Mind Studio tool
+    -   Model conversion using **Mind Studio** tool
         1.  Choose **Tool \> Convert** Model from the main menu of Mind Studio. The Convert Model page is displayed.
         2.  On the **Model** **Convert** page, perform model conversion configuration.
             -    Set **Model File** to model file installed in [Step 2](#zh-cn_topic_0203223303_li8221184418455), the weight file would be automatically matched and filled in **Weight File**.
@@ -197,7 +197,7 @@ Before running the application, obtain the source code package and configure the
             
     -   Model conversion in command line mode:
         
-        1.  Enter the folder where the source model is saved as the Mind Studio installation user.
+        1.  Enter the folder where the source model is saved as the **Mind Studio** installation user.
 
             **cd $HOME/models/videoanalysiscar**
             
@@ -209,11 +209,11 @@ Before running the application, obtain the source code package and configure the
 
             >![](public_sys-resources/icon-note.gif) **NOTE：**   
             
-            >-  All files required for **input\_shape**、**insert\_op\_conf**、**op\_name\_map** are in the “sample-videoanalysiscar/MyModel” directory under the path where the source code is located，please configure these file paths according to the path where your actual source code is located.
+            >-  All the files required for **input\_shape**、**insert\_op\_conf**、**op\_name\_map** are in the **“sample-videoanalysiscar/MyModel”** directory under the path where the source code is located，please configure these file paths according to the path where your actual source code is located.
             >-   **XXX** is the name of model in [Table 1](#zh-cn_topic_0203223303_table117203103464), please fill in the name of model to be converted during conversion. The **car\_plate\_recognition**、**car\_type**、**car\_color** does not need the **op\_name\_map** parameter for model conversion. An error will be reported during model conversion if the unnecessary parameters are not deleted.
             >-   The specific meaning of each parameter can be found in the following documents[https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn\_topic\_0165968579.html](https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn_topic_0165968579.html)  
             
-5.  Upload the converted model file（.om file）to “**sample-videoanalysiscar/script**” directory  in the source code path in [Step 1](#zh-cn_topic_0203223303_li953280133816)
+5.  Upload the converted model file（.om file）to **“sample-videoanalysiscar/script”** directory  in the source code path in [Step 1](#zh-cn_topic_0203223303_li953280133816)
 
 ## Compile<a name="zh-cn_topic_0203223303_section1759513564117"></a>
 
@@ -318,7 +318,7 @@ Before running the application, obtain the source code package and configure the
 
     ![](figures/videocar_run_3.png)
     
-    Use the URL shown in the preceding figure to log in to **Presenter Server** (only the Chrome browser is supported). The IP address is that entered in [Figure 12](#zh-cn_topic_0203223303_fig73590910118) and the default port number is 7005. The following figure indicates that Presenter Server is started successfully.
+    Use the URL shown in the preceding figure to log in to **Presenter Server** (only the Chrome browser is supported). The IP address is that entered in [Figure 12](#zh-cn_topic_0203223303_fig73590910118) and the default port number is 7005. The following figure indicates that **Presenter Server** is started successfully.
     
    
      **Figure 14**  Home page<a name="zh-cn_topic_0203223303_fig129539592546"></a>  
@@ -376,14 +376,14 @@ Before running the application, obtain the source code package and configure the
 
      After the video program is analyzed, it will automatically stop and exit, as shown in[Figure 17](#zh-cn_topic_0203223303_fig464152917203).
 
-    **图 17**  Video Analysiscar application stops<a name="zh-cn_topic_0203223303_fig464152917203"></a>  
+    **Figure 17**  Video Analysiscar application stops<a name="zh-cn_topic_0203223303_fig464152917203"></a>  
     
 
     ![](figures/videocar_stop.png)
 
 -   **Stopping Presenter Server service**
 
-    The **Presenter Server** service is always in the running state after being started. To stop the Presenter Server service of the car detection application, perform the following operations: 
+    The **Presenter Server** service is always in the running state after being started. To stop the **Presenter Server** service of the car detection application, perform the following operations: 
 
     Run the following command to check the process of the **Presenter Server** service corresponding to the car detection application as the **Mind Studio** installation user:
 
