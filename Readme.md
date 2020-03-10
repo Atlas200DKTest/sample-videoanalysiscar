@@ -1,3 +1,5 @@
+中文|[英文](Readme_en.md)
+
 # 车辆检测<a name="ZH-CN_TOPIC_0208834984"></a>
 
 开发者将本Application部署至Atlas 200 DK上实现对本地mp4文件或者RTSP视频流进行解码，对视频帧中的车辆及其属性进行预测，生成结构化信息发送至Server端进行保存、展示的功能。
