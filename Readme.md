@@ -31,7 +31,7 @@
 
     **./MindStudio.sh**
 
-    启动成功后，打开**sample-videoanalysiscar**工程，如[图8](#zh-cn_topic_0203223303_fig721144422212)所示。
+    启动成功后，打开**sample-videoanalysiscar**工程，如[图1](#zh-cn_topic_0203223303_fig721144422212)所示。
 
     **图 1**  打开sample-videoanalysiscar工程<a name="zh-cn_topic_0203223303_fig721144422212"></a>  
     
