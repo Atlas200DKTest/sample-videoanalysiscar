@@ -85,7 +85,7 @@ Before using an open source application, ensure that:
     >-   Current RTSP video streams only support rtsp://ip:port/path format, if other urls format is need to be used, the **IsValidRtsp**  function in the **video\_decode.cpp** should be removed, or directly return true to skip regular expression matching.
     >-   The RTSP streams address in this example cannot be used directly. If you need to use RTSP, please use live555 or other methods to make RTSP video streams locally, and it can be played in VLC, then fill the URL of the locally made RTSP video streams into the corresponding parameters of the configuration file.  
 
-3.  Run the deployment script to adjust the configuration parameters, download and compile 3rd party libraries. Open the Terminal of **Mind Studio** tool, which is under the main code directory, run the following command to execute environment deployment in the backstage, as shown in [Figure 3](#zh-cn_topic_0182554577_fig19292258105419").
+3.  Run the deployment script to adjust the configuration parameters, download and compile 3rd party libraries. Open the Terminal of **Mind Studio** tool, which is under the main code directory, run the following command to execute environment deployment in the backstage, as shown in [Figure 3](#zh-cn_topic_0182554577_fig19292258105419).
     
     **Figure 3**  Execute deployment script<a name="zh-cn_topic_0182554577_fig19292258105419"></a>  
     
@@ -109,7 +109,7 @@ Before using an open source application, ensure that:
 
 4.  <a name="zh-cn_topic_0203223303_li499911453439"></a>Start Presenter Server.
 
-    Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223303_li953280133816), run the following command to start the **Presenter Server** main program of the **Video Analysiscar** application, as shown in [Figure 5](zh-cn_topic_0203223303.md#fig423515251067).
+    Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1](#zh-cn_topic_0203223303_li953280133816) by default, run the following command to start the **Presenter Server** main program of the **Video Analysiscar** application, as shown in [Figure 5](zh-cn_topic_0203223303.md#fig423515251067).
 
     **bash run\_present\_server.sh**
 
