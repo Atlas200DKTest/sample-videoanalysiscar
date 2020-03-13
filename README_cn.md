@@ -17,7 +17,7 @@
 
 1.  获取源码包。
 
-    将[https://github.com/Atlas200DKTest/sample-videoanalysiscar](https://github.com/Atlas200DKTest/sample-videoanalysiscar)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-videoanalysiscar。
+    将[https://github.com/Atlas200dk/sample-videoanalysiscar](https://github.com/Atlas200dk/sample-videoanalysiscar)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-videoanalysiscar。
 
 2.  <a name="zh-cn_topic_0182554635_li8221184418455"></a>获取此应用中所需要的原始网络模型。
 
@@ -38,7 +38,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="9.68096809680968%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554635_p118591410204619"><a name="zh-cn_topic_0182554635_p118591410204619"></a><a name="zh-cn_topic_0182554635_p118591410204619"></a>车辆颜色识别模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p11859310174613"><a name="zh-cn_topic_0182554635_p11859310174613"></a><a name="zh-cn_topic_0182554635_p11859310174613"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/car_color" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/car_color</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p11859310174613"><a name="zh-cn_topic_0182554635_p11859310174613"></a><a name="zh-cn_topic_0182554635_p11859310174613"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/car_color" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/car_color</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554635_row78596105463"><td class="cellrowborder" valign="top" width="17.32173217321732%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554635_p118591910104615"><a name="zh-cn_topic_0182554635_p118591910104615"></a><a name="zh-cn_topic_0182554635_p118591910104615"></a>car_type</p>
@@ -46,7 +46,7 @@
     <td class="cellrowborder" valign="top" width="9.68096809680968%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554635_p1685991044614"><a name="zh-cn_topic_0182554635_p1685991044614"></a><a name="zh-cn_topic_0182554635_p1685991044614"></a>车辆品牌识别模型。</p>
     <p id="zh-cn_topic_0182554635_p13859410184613"><a name="zh-cn_topic_0182554635_p13859410184613"></a><a name="zh-cn_topic_0182554635_p13859410184613"></a>基于Caffe的GoogleNet模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p1985915105461"><a name="zh-cn_topic_0182554635_p1985915105461"></a><a name="zh-cn_topic_0182554635_p1985915105461"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/car_type" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/car_type</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p1985915105461"><a name="zh-cn_topic_0182554635_p1985915105461"></a><a name="zh-cn_topic_0182554635_p1985915105461"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/car_type" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/car_type</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554635_row1985913103461"><td class="cellrowborder" valign="top" width="17.32173217321732%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554635_p14859151016464"><a name="zh-cn_topic_0182554635_p14859151016464"></a><a name="zh-cn_topic_0182554635_p14859151016464"></a>car_plate_detection</p>
@@ -54,7 +54,7 @@
     <td class="cellrowborder" valign="top" width="9.68096809680968%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554635_p108593100461"><a name="zh-cn_topic_0182554635_p108593100461"></a><a name="zh-cn_topic_0182554635_p108593100461"></a>车牌检测网络模型。</p>
     <p id="zh-cn_topic_0182554635_p1785921024614"><a name="zh-cn_topic_0182554635_p1785921024614"></a><a name="zh-cn_topic_0182554635_p1785921024614"></a>基于Caffe的Mobilenet-SSD模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p158596106460"><a name="zh-cn_topic_0182554635_p158596106460"></a><a name="zh-cn_topic_0182554635_p158596106460"></a>请参考<a href="" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/object_detect/car_plate_detection</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p158596106460"><a name="zh-cn_topic_0182554635_p158596106460"></a><a name="zh-cn_topic_0182554635_p158596106460"></a>请参考<a href="" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/object_detect/car_plate_detection</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554635_row08596101464"><td class="cellrowborder" valign="top" width="17.32173217321732%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554635_p178591510164619"><a name="zh-cn_topic_0182554635_p178591510164619"></a><a name="zh-cn_topic_0182554635_p178591510164619"></a>car_plate_recognition</p>
@@ -62,7 +62,7 @@
     <td class="cellrowborder" valign="top" width="9.68096809680968%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554635_p1485911105469"><a name="zh-cn_topic_0182554635_p1485911105469"></a><a name="zh-cn_topic_0182554635_p1485911105469"></a>车牌号码识别网络模型。</p>
     <p id="zh-cn_topic_0182554635_p17859191018468"><a name="zh-cn_topic_0182554635_p17859191018468"></a><a name="zh-cn_topic_0182554635_p17859191018468"></a>基于Caffe的CNN模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p7859181094619"><a name="zh-cn_topic_0182554635_p7859181094619"></a><a name="zh-cn_topic_0182554635_p7859181094619"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/car_plate_recognition" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/car_plate_recognition</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p7859181094619"><a name="zh-cn_topic_0182554635_p7859181094619"></a><a name="zh-cn_topic_0182554635_p7859181094619"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/car_plate_recognition" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/car_plate_recognition</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554635_row88591310124617"><td class="cellrowborder" valign="top" width="17.32173217321732%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554635_p685911013465"><a name="zh-cn_topic_0182554635_p685911013465"></a><a name="zh-cn_topic_0182554635_p685911013465"></a>vgg_ssd</p>
@@ -70,7 +70,7 @@
     <td class="cellrowborder" valign="top" width="9.68096809680968%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554635_p1786011016461"><a name="zh-cn_topic_0182554635_p1786011016461"></a><a name="zh-cn_topic_0182554635_p1786011016461"></a>目标检测网络模型。</p>
     <p id="zh-cn_topic_0182554635_p086018109465"><a name="zh-cn_topic_0182554635_p086018109465"></a><a name="zh-cn_topic_0182554635_p086018109465"></a>基于Caffe的SSD512模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p1186071044613"><a name="zh-cn_topic_0182554635_p1186071044613"></a><a name="zh-cn_topic_0182554635_p1186071044613"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/object_detect/vgg_ssd" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/object_detect/vgg_ssd</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="72.997299729973%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p1186071044613"><a name="zh-cn_topic_0182554635_p1186071044613"></a><a name="zh-cn_topic_0182554635_p1186071044613"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/object_detect/vgg_ssd" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/object_detect/vgg_ssd</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     </tbody>
@@ -280,7 +280,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554635_p1334011245818"><a name="zh-cn_topic_0182554635_p1334011245818"></a><a name="zh-cn_topic_0182554635_p1334011245818"></a>对DVPP接口进行了封装，提供对图片/视频的处理能力。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p4340112155815"><a name="zh-cn_topic_0182554635_p4340112155815"></a><a name="zh-cn_topic_0182554635_p4340112155815"></a><a href="https://github.com/Atlas200DKTest/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200DKTest/sdk-ezdvpp</a></p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p4340112155815"><a name="zh-cn_topic_0182554635_p4340112155815"></a><a name="zh-cn_topic_0182554635_p4340112155815"></a><a href="https://github.com/Atlas200dk/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200dk/sdk-ezdvpp</a></p>
 <p id="zh-cn_topic_0182554635_p18340012195812"><a name="zh-cn_topic_0182554635_p18340012195812"></a><a name="zh-cn_topic_0182554635_p18340012195812"></a>下载后请保持文件夹名称为ezdvpp。</p>
 </td>
 </tr>
@@ -288,7 +288,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554635_p734081285817"><a name="zh-cn_topic_0182554635_p734081285817"></a><a name="zh-cn_topic_0182554635_p734081285817"></a>与Presenter Server进行交互的API接口。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p14340912175819"><a name="zh-cn_topic_0182554635_p14340912175819"></a><a name="zh-cn_topic_0182554635_p14340912175819"></a><a href="https://github.com/Atlas200DKTest/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200DKTest/sdk-presenter/tree/master</a></p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554635_p14340912175819"><a name="zh-cn_topic_0182554635_p14340912175819"></a><a name="zh-cn_topic_0182554635_p14340912175819"></a><a href="https://github.com/Atlas200dk/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200dk/sdk-presenter/tree/master</a></p>
 <p id="zh-cn_topic_0182554635_p1334013129584"><a name="zh-cn_topic_0182554635_p1334013129584"></a><a name="zh-cn_topic_0182554635_p1334013129584"></a>请获取此路径下的presenteragent文件夹，下载后请保持文件夹名称为presenteragent。</p>
 </td>
 </tr>
